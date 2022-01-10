@@ -7,7 +7,7 @@ app.get('', function(req,res) {
     res.send({
         resultatAddition: addition(1,6),
         resultatConcatenation: concatenation("I\'ll be", " back"),
-        resultatAdditionAvecType: additionAvecType(new Operation()),
+        resultatAdditionAvecType: additionAvecType(new Operation(6,15)),
     })
 });
 
