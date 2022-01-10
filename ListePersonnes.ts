@@ -27,7 +27,7 @@ let drHouse:Travailleur = {
     travail: TypeDeTravail.MEDECIN
 };
 
-
-const listePersonnes:Personne[] | Travailleur[] = [marc,chefWiggum,drHouse];
+//TODO Definir le type ici
+const listePersonnes: = [marc,chefWiggum,drHouse];
 
 export {listePersonnes};

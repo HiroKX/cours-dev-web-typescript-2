@@ -8,8 +8,8 @@ app.get('', function(req,res) {
     res.send({
         listePersonnes,
     })
-
-    listePersonnes.forEach((personne:Personne | Travailleur) => {
+    //TODO Definir le type ici
+    listePersonnes.forEach((personne) => {
        console.log(personne);
     });
 });
