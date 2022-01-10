@@ -11,16 +11,18 @@ app.get('', function(req,res) {
     })
 });
 
-
-function addition(n1: number, n2: number):number{
+//TODO Ajoutez le types manquants ici
+function addition(n1:, n2:){
     return n1 + n2;
 }
 
-function concatenation(n1: string, n2: string):string{
+//TODO Ajoutez le types manquants ici
+function concatenation(n1, n2){
     return n1 + n2;
 }
 
-function additionAvecType(operation: Operation){
+//TODO Ajoutez le types manquants ici
+function additionAvecType(operation){
     return operation.nombre1 + operation.nombre2;
 }
 
