@@ -24,7 +24,7 @@ function concatenation(n1: , n2: ){
 
 //TODO Ajoutez le types manquants ici
 function additionAvecType(operation: ){
-    operation.n1 + operation.n2;
+    return operation.n1 + operation.n2;
 }
 
 
