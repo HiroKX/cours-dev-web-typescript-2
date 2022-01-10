@@ -1,6 +1,6 @@
 import express from 'express';
 import {listePersonnes} from "./ListePersonnes.js";
-import {Personne} from "./Classes";
+import {Personne, Travailleur} from "./Interfaces";
 
 let app = express();
 
@@ -9,8 +9,8 @@ app.get('', function(req,res) {
         listePersonnes,
     })
 
-    listePersonnes.forEach((personne:Personne) => {
-       console.log(personne.nomEntier());
+    listePersonnes.forEach((personne:Personne | Travailleur) => {
+       console.log(personne);
     });
 });
 

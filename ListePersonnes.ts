@@ -1,35 +1,33 @@
-import {Informaticien, Medecin, Personne} from "./Classes.js";
+import {Personne,TypeDeTravail,Travailleur} from "./Interfaces.js";
 
 
-let marc:Personne = new Personne(
-     "Petitdemange",
-     "Marc",
-     "+33611510957",
-     24,
-     "m"
-);
+let marc:Personne = {
+    nom: "Petitdemange",
+    prenom: "Marc",
+    numTel: "+33611510957",
+    age: 24,
+    sexe: "m"
+}
 
-let misterRobot:Informaticien = new Informaticien(
-    "Robot",
-    "Mister",
-    "+33548759574",
-    26,
-    'm',
-    ["python", "typescript","node","angular"],
-    "Aucune haha ! Contre la corporation ! #D3a6 4 K0rp0r8"
-);
+let chefWiggum:Travailleur = {
+    nom: "Wiggum",
+    prenom: "Clancy",
+    numTel: "+33548759574",
+    age: 45,
+    sexe: 'm',
+    travail: TypeDeTravail.POLICIER
+}
 
-let drHouse:Medecin = new Medecin(
-    "Nahasapeemapetilon",
-    "Apu",
-    "+33548754574",
-    45,
-    'm',
-     "Princeton-Plainsboro",
-     "Diagnosticien"
-);
+let drHouse:Travailleur = {
+    nom: "House",
+    prenom: "Gregory",
+    numTel: "+33548759574",
+    age: 56,
+    sexe: 'm',
+    travail: TypeDeTravail.MEDECIN
+};
 
 
-const listePersonnes:Personne[] = [marc,misterRobot,drHouse];
+const listePersonnes:Personne[] | Travailleur[] = [marc,chefWiggum,drHouse];
 
 export {listePersonnes};
