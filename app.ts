@@ -1,6 +1,6 @@
 import express from 'express';
-import path from 'path';
-const __dirname = path.resolve();
+import {Operation} from "./Operation.js";
+
 let app = express();
 
 app.get('', function(req,res) {
@@ -12,19 +12,16 @@ app.get('', function(req,res) {
 });
 
 
-//TODO Ajoutez les types manquants ici
-function addition(n1: , n2: ){
+function addition(n1: number, n2: number):number{
     return n1 + n2;
 }
 
-//TODO Ajoutez les types manquants ici
-function concatenation(n1: , n2: ){
+function concatenation(n1: string, n2: string):string{
     return n1 + n2;
 }
 
-//TODO Ajoutez le types manquants ici
-function additionAvecType(operation: ){
-    return operation.n1 + operation.n2;
+function additionAvecType(operation: Operation){
+    return operation.nombre1 + operation.nombre2;
 }
 
 
