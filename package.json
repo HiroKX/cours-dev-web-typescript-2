@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/MarcPetitdemange/cours-dev-web-typescript-2#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "typedoc": "^0.22.10"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",

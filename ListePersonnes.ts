@@ -1,4 +1,4 @@
-import {Personne,TypeDeTravail,Travailleur} from "./Interfaces.js";
+import {Personne,TypeDeTravail} from "./Interface.js";
 
 
 let marc:Personne = {
@@ -6,10 +6,10 @@ let marc:Personne = {
     prenom: "Marc",
     numTel: "+33611510957",
     age: 24,
-    sexe: "m"
+    sexe: "m",
 }
 
-let chefWiggum:Travailleur = {
+let chefWiggum:Personne = {
     nom: "Wiggum",
     prenom: "Clancy",
     numTel: "+33548759574",
@@ -18,7 +18,7 @@ let chefWiggum:Travailleur = {
     travail: TypeDeTravail.POLICIER
 }
 
-let drHouse:Travailleur = {
+let drHouse:Personne = {
     nom: "House",
     prenom: "Gregory",
     numTel: "+33548759574",
@@ -28,6 +28,6 @@ let drHouse:Travailleur = {
 };
 
 
-const listePersonnes:Personne[] | Travailleur[] = [marc,chefWiggum,drHouse];
+const listePersonnes:Personne[] = [chefWiggum,marc,drHouse];
 
 export {listePersonnes};
