@@ -1,4 +1,4 @@
-import {Personne,TypeDeTravail,Travailleur} from "./Interfaces.js";
+import {Personne, TypeDeTravail, Travailleur} from "./Interfaces.js";
 
 
 let marc:Personne = {
@@ -28,6 +28,6 @@ let drHouse:Travailleur = {
 };
 
 //TODO Definir le type ici
-const listePersonnes: = [marc,chefWiggum,drHouse];
+const listePersonnes: Personne[] = [marc,chefWiggum,drHouse];
 
 export {listePersonnes};
