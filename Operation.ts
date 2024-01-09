@@ -1,10 +1,10 @@
 
 //TODO Ajoutez le types manquants ici
 export class Operation {
-    nombre1;
-    nombre2;
+    nombre1: number;
+    nombre2: number;
 
-    constructor(nombre1, nombre2) {
+    constructor(nombre1: number, nombre2: number) {
         this.nombre1 = nombre1;
         this.nombre2 = nombre2;
     }
